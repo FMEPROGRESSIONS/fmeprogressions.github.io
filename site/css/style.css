@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@500&display=swap');
 .colorred{
 	color: #FF0000
 }
@@ -114,7 +116,8 @@
 	font-size: 20px;
 }
 body{
-	background: url('../img/sitephone.jpg') center/cover no-repeat, url('../img/sitephone2.jpg') center no-repeat;
+	background: url('../img/sitebg.jpg') center/cover no-repeat;
+	font-family: Comfortaa;
 }
 .navbar {
 	position: fixed;
@@ -128,7 +131,6 @@ a {
 	text-decoration: none;
 }
 a:hover {
-
 	color: #00008B;
 }
 
@@ -182,18 +184,27 @@ a:hover {
 }
 #block1 {
 float: left;
-display: block;
-width: 300px;
-margin: 2px;
+/*display: block;*/
+width: 350px;
+padding: 280px 0px 0px 250px;
 }
-
 #block2 {
 float: left;
-display: block;
-width: 300px;
-margin: 2px;
+/*display: block;*/
+width: 350px;
+padding: 280px 0px 0px 0px;
 }
+
 .formsp{
 	font-size: 30px;
 	text-align: center;
+}
+.button {
+	font-family: 'Cuprum', sans-serif;
+	color: black;
+	background-color: blue; /* Цвет фона */
+	padding: 10px;
+}
+.card{
+	text-allign: center;
 }
