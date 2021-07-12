@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+header {
+	font-family: 'Comfortaa';
+	padding: 15px 0px 15px 0px;
+	margin: 0px 0px 0px 0px;
+	background-color: #FFA500;
+	text-align: center;
+	
+}
+.navbar a {
+	font-size: 25px;
+	text-decoration: none;
+	white-space: pre;
+	padding-left: 50px;
+	color: black;
+}
+.navbar a:hover {
+	color: #808080;
+}
+a div {
+	color: orange;
+}
+body {
+	font-family: 'Comfortaa';
+	background-color: #D3D3D3;
+}
+footer {
+	backgroung-color: #0000FF;
+}
+#block1 {
+	width: 307px;
+	float: left;
+	text-align: center;
+	padding: 0px 0px 0px 50px;
+}
+
+#block2 {
+	width: 307px;
+	float: left;
+	text-align: center;
+	padding: 0px 0px 0px 100px;
+}
+#block2 h2 {
+	color: orange;
+}
+#block1 h2 {
+	color: orange;
+}
+.size30 {
+
+	font-size: 50px;
+}
+.center {
+	text-align: center;
+}
+.padding {
+	padding: 0px 50px 0px 50px;
+}
+.orange {
+	color: orange;
+	font-weight: bold;
+}
