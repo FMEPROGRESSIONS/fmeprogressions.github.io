@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected Area"
+AuthUserFile /BuySite\TemplateSites\Templates\family\photos\mousey\password.htpasswd
+Require valid-user
