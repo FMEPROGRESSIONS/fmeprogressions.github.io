@@ -30,19 +30,7 @@ body {
 footer {
 	backgroung-color: #0000FF;
 }
-#block1 {
-	width: 307px;
-	float: left;
-	text-align: center;
-	padding: 0px 0px 0px 150px;
-}
 
-#block2 {
-	width: 307px;
-	float: left;
-	text-align: center;
-	padding: 0px 0px 0px 50px;
-}
 #block2 h2 {
 	color: orange;
 }
