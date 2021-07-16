@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<!-- Yandex.Metrika counter -->
+			<script type="text/javascript" >
+			   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+			   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+			   ym(82920103, "init", {
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true,
+					webvisor:true
+			   });
+			</script>
+			<noscript><div><img src="https://mc.yandex.ru/watch/82920103" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+			<!-- /Yandex.Metrika counter -->
+		<meta name="viewport">
+
+		<title>Исходный код для урока интерфейсы</title>
+		<link rel="stylesheet" href="css/0001.css" />
+
+		<meta name="viewport" content="width=1180 height=727">
+		
+		
+	</head>
+	<header>
+		<dir class="navbar">
+		<a href ="#">Главная</a> 
+		<a href ="#games">Игры</a>
+		<a href ="#news">Новости</a>
+		<a href ="#aboutus">О нас</a>
+		<a href ="#contacts">Контакты</a> <br />
+		<a href="m/index.html">Перейти на версию сайта для мобильного телефона</a>
+		</dir>
+	</header>
+	<body>
+
+		<dir class="sourcecode" id="block1">
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			from tkinter import * # Импортируем TKinter <br />
+			from tkinter import messagebox as mb<br />
+<br />
+	<br />		def none ():
+		<br />		&nbsp;&nbsp;&nbsp;&nbsp;print("Кнопка нажата!")
+<br />
+	<br />		def Info (): 
+		<br />		&nbsp;&nbsp;&nbsp;&nbsp;Text = Input.get () # Забираем текст из нашего поля инпут внизу
+<br />
+	<br />			&nbsp;&nbsp;&nbsp;&nbsp;Text_str = str (Text) # конвертируем этот текст в строках 
+<br />
+	<br />			&nbsp;&nbsp;&nbsp;&nbsp;mb.showinfo(title="Заголовок", message=Text_str) # вывод всплывающего окна
+<br />
+	<br />		def Err (): 
+<br />
+	<br />			&nbsp;&nbsp;&nbsp;&nbsp;Text = Input.get () # Забираем текст из нашего поля инпут внизу
+<br />
+	<br />			&nbsp;&nbsp;&nbsp;&nbsp;Text_str = str (Text) # конвертируем этот текст в строках
+<br />
+	<br />			&nbsp;&nbsp;&nbsp;&nbsp;mb.showerror(title="Заголовок", message=Text_str) # вывод всплывающего окна
+<br />
+	<br />		def Warn (): 
+<br />
+	<br />			&nbsp;&nbsp;&nbsp;&nbsp;Text = Input.get () # Забираем текст из нашего поля инпут внизу
+<br />
+	<br />			&nbsp;&nbsp;&nbsp;&nbsp;Text_str = str (Text) # конвертируем этот текст в строках 
+<br />
+	<br />			&nbsp;&nbsp;&nbsp;&nbsp;mb.showwarning(title="Заголовок", message=Text_str) # вывод всплывающего окна
+<br />
+	<br />		root = Tk()
+<br />
+	<br />		root['bg'] = '#3b3737' # Устанавливаем цвет окна
+				root.title('Name') # Устанавливаем заголовок окна
+		<br />	root.wm_attributes('-alpha', 1) # Устанавливаем прозрачность  
+<br />			root.geometry('300x250') # Устанавливаем размер в px
+	<br />		root.resizable(width=False, height=False) # Здесь мы говорим, что размер окна менять нельзя
+<br />
+	<br />		canvas = Canvas(width=300, height=250, bg='#3b3737')
+		<br />	canvas.pack()
+<br />
+	<br />		frame = Frame (root, bg = '#3b3737') 
+		<br />	frame.place (relwidth = 1, relheight = 1) 
+<br />
+	<br />		mainmenu = Menu(root) # Инициализируем меню
+		<br />	filemenu = Menu(mainmenu, tearoff=0) # Убираем странную полоску сверху, открепляющую меню
+<br />			root.config(menu=mainmenu) 
+	<br />		mainmenu.add_command(label="Информация", command=Info) # Пункт 
+<br />			mainmenu.add_command(label="Ошибка", command=Err) # Пункт
+	<br />		mainmenu.add_command(label="Предупреждение", command=Warn) # Все еще пункт
+<br />
+<br />
+	<br />		title = Label(frame, text='Это текст', font='Comfortaa 20', fg = '#FFFFFF', bg='#3b3737', pady=5) # Добавляем текст
+		<br />	title.pack() # Отображаем текст
+<br />
+	<br />		Input = Entry (frame, bg = '#302D2D') # Поле ввода
+<br />			Input.pack () # Отображение поля ввода
+<br />
+	<br />		root.mainloop() # Запускаем основной цикл, чтобы программа работала
+<br />
+	<br />		# don't touch me!
+		<br />	# end of file
+		</dir>
+
+		
+	</body>
+	
+</html>
