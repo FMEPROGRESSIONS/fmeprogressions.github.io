@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Интерфейсы Python</title>
+	</head>
+	<body>
+		<details>
+			<summary><h2>Просмотреть исходный код</h2></summary>
+			# Подключаем нужные библиотеки <br />
+			from tkinter import * # Импортируем TKinter<br />
+			import tkinter.messagebox as mb<br />
+
+			### ПЕРЕМЕННЫЕ<br />
+			root = Tk() # Создаем переменную типа Tk<br />
+			WIDTH = 300<br />
+			HEIGHT = 250<br />
+			WD = '300x250'<br />
+			# colors<br />
+			RED	= '#FF0000'<br />
+			LIGHT_RED = '#FF4500'	<br />
+			ORANGE = '#FFA500'<br />
+			YELLOW = '#FFFF00'<br />
+			GREEN = '#00FF00'<br />
+			BLUE = '#0000FF'<br />
+			LIGHT_BLUE = '#ADD8E6'<br />
+			PURPLE = '#800080'<br />
+			BLACK = '#000000'<br />
+			WHITE = '#FFFFFF'<br />
+			LIGHT_GRAY = '#D3D3D3'	<br />
+<br />
+			### Функции для кнопок<br />
+			def but_inf(): # Функция при нажатии на кнопку <br />
+				text = Input.get() # Забираем текст из нашего поля инпут внизу<br />
+				info_str = str(text) # конвертируем этот текст в строк<br />
+				# ИНФО<br />
+				mb.showinfo(title="Название всплывающего окна", message=info_str) # выводим текст в всплывающем окне<br />
+
+			def but_war(): # Функция при нажатии на кнопку <br />
+				text = Input.get()<br />
+				info_str = str(text)<br />
+				# ПРЕДУПРЕЖДЕНИЕ<br />
+				mb.showwarning(title="Название всплывающего окна", message=info_str)<br />
+
+			def but_err(): # Функция при нажатии на кнопку <br />
+				text = Input.get()<br />
+				info_str = str(text)<br />
+				# ОШИБКА<br />
+				mb.showerror(title="Название всплывающего окна", message=info_str)<br />	
+			###<br />
+<br />
+			### ОКНО<br />
+			root['bg'] = LIGHT_GRAY # Устанавливаем цвет окна<br />
+			root.title('none') # Устанавливаем заголовок окна<br />
+			root.wm_attributes('-alpha', 1) # Устанавливаем прозрачность <br />
+<br />
+			root.geometry(WD) # Устанавливаем размер в px<br />
+			root.resizable(width=False, height=False) # Здесь мы говорим, что размер окна менять нельзя<br />
+<br />
+			canvas = Canvas(root, height=HEIGHT, width=WIDTH) # Устанавливаем канвас, это что-то<br />
+			canvas.pack()									  # вроде холста, на который мы повесим виджеты<br />
+<br />
+			frame = Frame(root, bg='gray') # Фон того самого холста<br />
+			frame.place(relwidth=1, relheight=1) # Смещение и размер холста<br />
+			###<br />
+<br />
+			### СОДЕРЖИМОЕ ОКНА<br />
+
+			# ТЕКСТ <br />
+			title = Label(frame, text='Введите текст и выберите тип окна: ', bg='gray', font=140) # Установим текст<br />
+			title.pack() # Отображение текста<br />
+			# ПОЛЕ ВВОДА<br />
+			Input = Entry(frame, bg='white') # Поле ввода<br />
+			Input.pack() # Отображение поля ввода<br />
+			# КНОПКА<br />
+			but_inf = Button(frame, text='Информация', bg='green', command=but_inf) # Установим кнопку и действие-функцию<br />
+			but_inf.pack() # Отображение кнопки<br />
+			but_war = Button(frame, text='Предупреждение', bg='green', command=but_war) # Установим кнопку и действие-функцию<br />
+			but_war.pack() # Отображение кнопки<br />
+			but_err = Button(frame, text='Ошибка', bg='green', command=but_err) # Установим кнопку и действие-функцию<br />
+			but_err.pack() # Отображение кнопки<br />
+
+			###<br />
+			root.mainloop() # Запускаем основной цикл, чтобы программа работала<br />
+		</details>
+	</body>
+</html>
