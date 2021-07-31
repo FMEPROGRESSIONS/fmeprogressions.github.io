@@ -4,7 +4,7 @@ header {
 	font-family: 'Comfortaa';
 	padding: 1px 0px 0px 1px;
 	margin: 0px 0px 0px 0px;
-	background-color: #FFA500;
+	background-color: #0000FF;
 	text-align: center;
 	position: fixed;
 	left: 0;
@@ -21,7 +21,7 @@ header {
 	color: #808080;
 }
 a div {
-	color: orange;
+	color: #0000FF;
 }
 body {
 	font-family: 'Comfortaa';
@@ -50,10 +50,10 @@ footer {
 	padding: 0px 0px 0px 90px;
 }
 #block2 h2 {
-	color: orange;
+	color: #0000FF;
 }
 #block1 h2 {
-	color: orange;
+	color: #0000FF;
 }
 .size30 {
 
@@ -66,11 +66,11 @@ footer {
 	padding: 0px 50px 0px 50px;
 }
 .orange {
-	color: orange;
+	color: #0000FF;
 	font-weight: bold;
 }
 .lemonfresh {
-	background-color: orange;
+	background-color: #0000FF;
 	padding: 1px 0px 300px 0px;
 	left: 0;
 	top: 0;
